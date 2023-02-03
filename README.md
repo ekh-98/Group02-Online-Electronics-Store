@@ -1,2 +1,2 @@
-# Group02-Online Grocery Shopping Web App
+# Group02-Online Electronics Store
 Flight Booking System 
