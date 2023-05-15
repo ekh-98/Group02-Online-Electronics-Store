@@ -7,7 +7,7 @@ const axios =require("axios")
 
 app.use(bodyParser.json())
 
-mongoose.connect("mongodb+srv://eherath1998:94FMzcWjeAnm9d8m@customer.r3gfa1c.mongodb.net/OrdersService?retryWrites=true&w=majority",()=>{
+mongoose.connect("mongodb+srv://OrdersService?retryWrites=true&w=majority",()=>{
     console.log("Database connected -Orders")
 })
 
