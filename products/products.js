@@ -8,7 +8,7 @@ require("./Product");
 
 const Product=mongoose.model("Product");
 
-mongoose.connect("mongodb+srv://eherath1998:94FMzcWjeAnm9d8m@customer.r3gfa1c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",()=>{
+mongoose.connect("mongodb+srv://myFirstDatabase?retryWrites=true&w=majority",()=>{
     
     console.log("Database is connected");
 });
