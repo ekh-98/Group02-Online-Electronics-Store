@@ -8,7 +8,7 @@ The architecture follows a microservices approach, where the application is divi
 
 Below is the architectural design of the Online Electronics Store
 
-![Architectural Design](https://ibb.co/wSGQ441)
+![Architectural Design](https://i.ibb.co/tqj2DD5/diagram-final.png)
 
 
 ## Micro-services
