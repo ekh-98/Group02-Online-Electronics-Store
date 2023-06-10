@@ -43,7 +43,7 @@ Overall, the implementation methods utilize popular Node.js frameworks (Express.
 ### Customer Microservice
 This service is responsible for managing customer-related functionalities, such as user registration, profile management, and address information.
 
-The REST API exposed by customer microservice:
+The end points exposed by customer microservice:
 
 POST /add_customer: Creates a new customer by providing the customer data in the request body.
 
