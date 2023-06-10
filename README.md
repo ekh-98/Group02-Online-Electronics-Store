@@ -107,13 +107,15 @@ We used the inbuilt discovery server of Node.js for out project.
 We developed API Gateway using Express for our project.The API gateway is implemented as a central entry point for the client applications to interact with the microservices. It acts as a reverse proxy and handles common cross-cutting concerns such as authentication, rate limiting, request aggregation, and caching. The API gateway simplifies the client-side communication and provides a unified interface for accessing the underlying microservices.
 
 ## User Interface
-We used Postman to access the services provided by our Online Electronic Store's API. Postman was also used Postman during the testing phase to test the functionality of the services provided by each micro service.
+We used Postman to access the services provided by our Online Electronic Store's API. Postman was also used during the testing phase to test the functionality of the services provided by each micro service.
 
 ## Deployment
 The system was deployed in docker
 
 ## Source code
 Link: https://github.com/ekh-98/Group02-Online-Electronics-Store.git
+
+Challenges faced in the development period:
 
 Breaking down a monolithic application into microservices requires careful consideration of service boundaries. Identifying the right granularity for services was a  be challenge as it involved understanding the business domains, dependencies, and data flows within the application.
 
@@ -126,6 +128,20 @@ Implementing effective communication patterns, such as synchronous and asynchron
 Managing deployments, service discovery, load balancing, and monitoring across multiple services required proper tooling and infrastructure. Ensuring seamless scaling and handling traffic spikes was a challenge.
 
 Troubleshooting and debugging issues were complex. Identifying the root cause of failures or performance bottlenecks across multiple services and distributed logs was a challenge.
+
+## Future improvements
+
+Improve error handling mechanisms across all microservices to provide more informative error messages and proper HTTP status codes. This will help in better troubleshooting and debugging of issues.
+
+Add input validation and data sanitization to ensure that the received data is valid and prevent any security vulnerabilities or data corruption.
+
+Enhance the security of the microservices by implementing authentication and authorization mechanisms. This can include validating user credentials, generating and validating tokens, and restricting access to certain routes based on user roles or permissions.
+
+mplement logging mechanisms to track and log important events, errors, and activities within the microservices. Additionally, set up monitoring tools or services to monitor the health and performance of the microservices.
+
+Improve the database connection handling by implementing connection pooling or other optimizations to enhance performance and scalability.
+
+Create comprehensive API documentation using tools like Swagger or OpenAPI to provide clear instructions on how to interact with the microservices. Include information about endpoints, request/response formats, and authentication requirements.
 
 ## References
 [1] M. Larsson, “Microservices,” Amazon, https://aws.amazon.com/microservices/#:~:text=Microservices%20allow%20each%20service%20to,experiences%20a%20spike%20in%20demand. (accessed Jun. 10, 2023). 
