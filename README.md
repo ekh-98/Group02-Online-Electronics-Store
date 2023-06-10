@@ -44,13 +44,19 @@ Overall, the implementation methods utilize popular Node.js frameworks (Express.
 This service is responsible for managing customer-related functionalities, such as user registration, profile management, and address information.
 
 The REST API exposed by customer microservice:
+
 POST /add_customer: Creates a new customer by providing the customer data in the request body.
+
 POST /authenticate_customer: Authenticates a customer by verifying the provided credentials.
+
 GET /view_customers: Retrieves all customers.
+
 GET /view_customer/{id}: Retrieves a specific customer by their ID.
+
 DELETE /delete_customer/{id}: Deletes a specific customer by their ID.
 
 Inter service interaction:
+
 Interaction with product Microservice: The customer micro service can interact with the product micro service. Through product micro service it will show all the products available in the shop to the customer.By sending HTTP requests the customer can view the products. 
 
 Interaction with order Microservice: The customer can place orders by sending HTTP requests to the order micro service and place orders, view orders and delete orders.
@@ -59,13 +65,19 @@ Interaction with order Microservice: The customer can place orders by sending HT
 The product microservice handles all operations related to managing the product catalog. It includes functionalities like product listing, searching, details, and inventory management.
 
 The REST API exposed by customer microservice:
+
 POST /add_product: Creates a new product by providing the product data in the request body.
+
 GET /view_products: Retrieves all products.
+
 GET /view_product/{id}: Retrieves a specific product by its ID.
+
 DELETE /delete_product/{id}: Deletes a specific product by its ID.
 
 Inter service interaction:
+
 Interaction with customer Microservice: To display all the products, the product micro service has to interact with customer micro service by sending HTTP requests. 
+
 Interaction with order Microservice: To display orders the product micro service and the order micro service have to send HTTP requests between each other.
 
 
@@ -73,13 +85,19 @@ Interaction with order Microservice: To display orders the product micro service
 The order microservice handles the order processing flow, including creating, updating, and deleting orders. It manages the interaction between customers, products, and inventory to ensure a smooth order fulfillment process.
 
 The REST API exposed by customer microservice:
+
 POST /add_order: Creates a new order by providing the order data in the request body.
+
 GET /view_orders: Retrieves all orders.
+
 GET /view_order/{id}: Retrieves a specific order by its ID.
+
 DELETE /delete_order/{id}: Deletes a specific order by its ID.
 
 Inter service interaction:
+
 Interaction with Product Microservice: When creating an order, the Order Microservice may need to retrieve product information from the Product Microservice. It can send an HTTP request to the Product Microservice's API to fetch product details based on the product ID.
+
 Interaction with Customer Microservice: When creating an order, the Order Microservice may need to validate customer information. It can send an HTTP request to the Customer Microservice's API to authenticate the customer or retrieve customer details based on the customer ID.
 
 ## Discovery Server
