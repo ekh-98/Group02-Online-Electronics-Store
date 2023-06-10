@@ -112,5 +112,20 @@ We used Postman to access the services provided by our Online Electronic Store's
 ## Deployment
 The system was deployed in docker
 
+## Source code
+Link: https://github.com/ekh-98/Group02-Online-Electronics-Store.git
+
+Breaking down a monolithic application into microservices requires careful consideration of service boundaries. Identifying the right granularity for services was a  be challenge as it involved understanding the business domains, dependencies, and data flows within the application.
+
+Building robust and resilient communication mechanisms between services was also a challenge.
+
+Managing data consistency and ensure data integrity across multiple services was complex. Coordinating database updates and maintaining data consistency in distributed transactions required careful design and implementation.
+
+Implementing effective communication patterns, such as synchronous and asynchronous messaging, event-driven architectures, or API gateways, was another challenge. Ensure reliable and efficient communication between services while maintaining loose coupling was copmlicated.
+
+Managing deployments, service discovery, load balancing, and monitoring across multiple services required proper tooling and infrastructure. Ensuring seamless scaling and handling traffic spikes was a challenge.
+
+Troubleshooting and debugging issues were complex. Identifying the root cause of failures or performance bottlenecks across multiple services and distributed logs was a challenge.
+
 ## References
 [1] M. Larsson, “Microservices,” Amazon, https://aws.amazon.com/microservices/#:~:text=Microservices%20allow%20each%20service%20to,experiences%20a%20spike%20in%20demand. (accessed Jun. 10, 2023). 
