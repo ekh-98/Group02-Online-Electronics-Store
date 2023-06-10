@@ -64,7 +64,7 @@ Interaction with order Microservice: The customer can place orders by sending HT
 ### Product Microservice
 The product microservice handles all operations related to managing the product catalog. It includes functionalities like product listing, searching, details, and inventory management.
 
-The REST API exposed by customer microservice:
+The end points  exposed by customer microservice:
 
 POST /add_product: Creates a new product by providing the product data in the request body.
 
@@ -84,7 +84,7 @@ Interaction with order Microservice: To display orders the product micro service
 ### Order Microservice
 The order microservice handles the order processing flow, including creating, updating, and deleting orders. It manages the interaction between customers, products, and inventory to ensure a smooth order fulfillment process.
 
-The REST API exposed by customer microservice:
+The end points exposed by customer microservice:
 
 POST /add_order: Creates a new order by providing the order data in the request body.
 
